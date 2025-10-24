@@ -3,9 +3,12 @@ def more_than_20(file):
 
     with open(file, 'r') as worlds_file:
 
-        for world in worlds_file:
+        for worlds in worlds_file:
 
-            worlds = world.strip()
+            world = worlds.strip()
+            len(world)
+            if len(world) > 20:
+                wordls_20.append(world)
 
 
     return wordls_20
