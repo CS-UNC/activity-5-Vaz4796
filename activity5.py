@@ -12,3 +12,11 @@ def more_than_20(file):
 
 
     return wordls_20
+
+
+
+def has_no_e(word):
+    return "e" not in word
+
+
+
