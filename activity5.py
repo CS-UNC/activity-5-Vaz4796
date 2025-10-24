@@ -19,5 +19,6 @@ def has_no_e(word):
     return "e" not in word
 
 
-def uses_only():
-    
+def uses_only(worlds, letters):
+    return set(worlds).issubset(set(letters))
+
