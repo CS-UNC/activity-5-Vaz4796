@@ -22,3 +22,13 @@ def has_no_e(word):
 def uses_only(worlds, letters):
     return set(worlds).issubset(set(letters))
 
+
+def all_uses_only(file, letter):
+    only_worlds = []
+
+    with open(file, 'r') as worlds_file:
+        for world in worlds_file:
+            worlds = world.strip()
+            if worlds and uses_only(worlds, letter):
+                 only_worlds.append(worlds)
+    return only_worlds
